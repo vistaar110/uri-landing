@@ -80,11 +80,7 @@ body {
   border-bottom: 2px solid var(--uri-accent);
 }
 
-/* Gallery */
-.carousel-item img {
-  height: 480px;
-  object-fit: cover;
-}
+
 
 /* Footer */
 .footer {
@@ -94,3 +90,4 @@ body {
 .footer a:hover {
   color: var(--uri-light) !important;
 }
+
