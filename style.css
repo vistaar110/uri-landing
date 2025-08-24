@@ -1,0 +1,96 @@
+/* ==========================
+   URI Landing Page Styles
+   ========================== */
+
+:root {
+  --uri-bg: #0d1b1e;        /* dark army background */
+  --uri-accent: #00fff7;    /* teal accent */
+  --uri-light: #00ccff;     /* light text accent */
+  --uri-card-bg: rgba(243, 32, 32, 0.05);
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: var(--uri-bg);
+  color: #f8f9fa;
+  line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(214, 15, 15, 0.6);
+  backdrop-filter: blur(6px);
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.nav-link {
+  transition: color 0.2s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--uri-accent) !important;
+}
+
+/* Hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #cfd8dc;
+}
+
+/* Section Titles */
+.section-title {
+  font-weight: 700;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 8px;
+  background: var(--uri-accent);
+  border-radius: 3px;
+}
+
+/* Cast Cards */
+.cast-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cast-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+}
+.cast-card img {
+  border-bottom: 2px solid var(--uri-accent);
+}
+
+/* Gallery */
+.carousel-item img {
+  height: 480px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.footer a:hover {
+  color: var(--uri-light) !important;
+}
