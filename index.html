@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>URI: The Surgical Strike — Official Landing Page (Demo)</title>
+  <meta name="description" content="Fan-made demo landing page for the film URI: The Surgical Strike. Built with Bootstrap." />
+
+  <!-- Bootstrap CSS (CDN). If you prefer local files, replace with your local bootstrap.min.css path. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons (optional for social icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    /* Minimal inline styles so the page looks decent even before style.css */
+    :root {
+      --uri-bg: #0d1b1e; /* dark blue-green */
+      --uri-accent: #2b7a78; /* teal */
+      --uri-light: #d9edf2; /* very light teal */
+    }
+
+    body { background: radial-gradient(1200px 600px at 10% -10%, rgba(43,122,120,.25), transparent), var(--uri-bg); color: #f8f9fa; }
+
+    .navbar { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(6px); }
+
+    .hero {
+      position: relative;
+      min-height: 75vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 6rem 1rem;
+      background: linear-gradient( to bottom, rgba(0,0,0,.45), rgba(13,27,30,.85) ), url('assets/images/poster.jpg') center / cover no-repeat;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .hero h1 { font-weight: 800; letter-spacing: .5px; }
+    .hero .badge { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); }
+
+    .section-title { letter-spacing: .4px; }
+
+    .cast-card img { object-fit: cover; height: 260px; }
+
+    .footer { background: #0b1618; border-top: 1px solid rgba(255,255,255,.08); }
+
+    .nav-link { color: #e6f7fa !important; }
+    .nav-link:hover { color: var(--uri-light) !important; }
+  </style>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">URI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cast">Cast</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trailer">Trailer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-9">
+          <span class="badge rounded-pill text-uppercase mb-3">Inspired by True Events</span>
+          <h1 class="display-4">URI: The Surgical Strike</h1>
+          <p class="lead- fw-semibold text-white-50 mb-4">“How's the Josh?” — High. Always. 🔥</p>
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="#trailer" class="btn btn-light btn-lg"><i class="bi bi-play-circle me-2"></i>Watch Trailer</a>
+            <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title h1 mb-3">About the Movie</h2>
+          <p class="lead text-white-50">A military action film that dramatizes the Indian Armed Forces' surgical strikes of 2016. Follow Major Vihaan Singh Shergill and his unit as they plan and execute a high-stakes operation with precision, courage, and unwavering spirit.</p>
+          <div class="d-flex gap-3 mt-3">
+            <span class="badge rounded-pill"><i class="bi bi-film me-2"></i>Action</span>
+            <span class="badge rounded-pill"><i class="bi bi-flag me-2"></i>Patriotic</span>
+            <span class="badge rounded-pill"><i class="bi bi-calendar2-event me-2"></i>2019</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 rounded-4 overflow-hidden border border-light border-opacity-25">
+            <!-- Embedded trailer teaser (muted) as visual in About; optional. Can be replaced by an image poster. -->
+            <iframe src="https://www.youtube.com/embed/VVY3do673Zc?mute=1&controls=0&rel=0" title="URI Trailer (teaser)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAST ===== -->
+  <section id="cast" class="py-5 border-top border-light border-opacity-10">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h2 class="section-title h1 m-0">Cast</h2>
+        <a href="#trailer" class="btn btn-outline-light btn-sm"><i class="bi bi-play-fill me-1"></i>Watch Trailer</a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Vicky Kaushal -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-dark h-100 cast-card border-light border-opacity-25 rounded-4 overflow-hidden">
+            <img src="assets/cast-vicky.jpg.jpg" class="card-img-top" alt="Vicky Kaushal as Major Vihaan" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Vicky Kaushal</h5>
+              <p class="card-text text-white-50 small">Major Vihaan Singh Shergill</p>
+            </div>
+          </div>
+        </div>
+        <!-- Paresh Rawal -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-dark h-100 cast-card border-light border-opacity-25 rounded-4 overflow-hidden">
+            <img src="assets/cast-paresh.jpg.jpg" class="card-img-top" alt="Paresh Rawal as Govind Bhardwaj" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Paresh Rawal</h5>
+              <p class="card-text text-white-50 small">Govind Bhardwaj</p>
+            </div>
+          </div>
+        </div>
+        <!-- Yami Gautam -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-dark h-100 cast-card border-light border-opacity-25 rounded-4 overflow-hidden">
+            <img src="assets/cast-yami.jpg.jpg" class="card-img-top" alt="Yami Gautam as Pallavi Sharma" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Yami Gautam</h5>
+              <p class="card-text text-white-50 small">Pallavi Sharma</p>
+            </div>
+          </div>
+        </div>
+        <!-- Mohit Raina -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-dark h-100 cast-card border-light border-opacity-25 rounded-4 overflow-hidden">
+            <img src="assets/cast-mohit.jpg.jpg" class="card-img-top" alt="Mohit Raina as Captain Karan Kashyap" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Mohit Raina</h5>
+              <p class="card-text text-white-50 small">Captain Karan Kashyap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY (Carousel) ===== -->
+  <section id="gallery" class="py-5 border-top border-light border-opacity-10">
+    <div class="container">
+      <h2 class="section-title h1 mb-4">Gallery</h2>
+
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded-4 overflow-hidden border border-light border-opacity-25">
+          <div class="carousel-item active">
+            <img src="assets/gallery3.jpg.jpg" class="d-block w-100" alt="Training and prep still" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery2.jpg.jpg" class="d-block w-100" alt="Team briefing still" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery3.jpg.jpg" class="d-block w-100" alt="Operation night still" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAILER ===== -->
+  <section id="trailer" class="py-5 border-top border-light border-opacity-10">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h2 class="section-title h1 m-0">Official Trailer</h2>
+        <a class="btn btn-outline-light btn-sm" href="https://www.youtube.com/watch?v=VVY3do673Zc" target="_blank" rel="noopener">Open on YouTube</a>
+      </div>
+      <div class="ratio ratio-16x9 rounded-4 overflow-hidden border border-light border-opacity-25">
+        <!-- User-provided link embedded below -->
+        <iframe src="https://www.youtube.com/embed/VVY3do673Zc" title="URI: The Surgical Strike — Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer py-4 text-white-50">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+      <div>
+        <small>© <span id="year"></span> URI Fan Demo. For educational purposes only.</small>
+      </div>
+      <div class="d-flex gap-3 fs-5">
+        <a class="text-white-50" href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a class="text-white-50" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a class="text-white-50" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    // Minimal JS so the year updates
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
